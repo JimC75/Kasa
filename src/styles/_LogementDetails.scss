@@ -1,0 +1,60 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    grid-template-rows: repeat(6, auto);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "div1 div1 div1 div1"
+        "div1 div1 div1 div1"
+        "div1 div1 div1 div1"
+        "div2 div2 div2 div2"
+        "div3 div3 div4 div4"
+        "div3 div3 div4 div4";
+
+    .div1 {
+        grid-area: div1;
+    }
+
+    .div2 {
+        grid-area: div2;
+        display: flex;
+
+        #div2-left {
+            h2 {
+                font-size: 36px;
+                font-weight: 500;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 10px;
+
+
+                li {
+                    height: 25px;
+                    min-width: 115px;
+                    font-size: 14px;
+                    background-color: #FF6060;
+                    color: white;
+                    border-radius: 10px;
+                    text-align: center;
+                    line-height: 25px;
+                    padding: 0 5px;
+
+                }
+            }
+        }
+
+        #div2-right {}
+    }
+
+    .div3 {
+        grid-area: div3;
+    }
+
+    .div4 {
+        grid-area: div4;
+    }
+}
