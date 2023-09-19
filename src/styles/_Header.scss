@@ -2,9 +2,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 0;
 
     .nav-header {
         color: #ff6060;
         text-decoration: none;
+        font-size: 24px;
+    }
+
+    .nav-home {
+        margin-right: 40px;
     }
 }

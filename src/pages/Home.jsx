@@ -1,4 +1,3 @@
-// import Logements from "../data/logements.json";
 import { useState, useEffect } from "react";
 import CarteLogement from "../components/CarteLogement";
 import HomeBanner from "../components/HomeBanner";

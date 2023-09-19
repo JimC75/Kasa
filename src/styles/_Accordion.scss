@@ -25,15 +25,16 @@
     p,
     ul {
         max-height: 0;
+        margin-bottom: 40px;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
         border-radius: 10px;
         font-size: 18px;
+        list-style: none;
         line-height: 142.6%;
         background-color: #F6F6F6;
 
         li {
-            color: black;
             width: 100%;
         }
 
@@ -41,8 +42,11 @@
     }
 
     &.open {
-        p {
+
+        p,
+        ul {
             max-height: 500px;
+            padding: 30px 20px;
         }
 
         .arrow {

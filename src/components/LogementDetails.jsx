@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Carousel from "./Carousel"
 import RatingStars from "./RatingStars"
 import Accordion from "./Accordion"
+import NameSeparator from "./NameSeparator"
 
 export default function LogementDetails({ pictures, title, location, tags, host, rating, description, equipments }) {
     console.log(host.name)
@@ -22,7 +23,8 @@ export default function LogementDetails({ pictures, title, location, tags, host,
                 </div>
                 <div id="div2-right">
                     <div id="host-div">
-                        <p>{host.name}</p>
+                        {/* <p>{host.name}</p> */}
+                        <NameSeparator name={host.name} />
                         <img src={host.picture} alt={"picture of " + host.name} />
                     </div>
                     <div id="rating-stars">
