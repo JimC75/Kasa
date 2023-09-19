@@ -5,9 +5,7 @@ export default function NameSeparator({ name }) {
     console.log(nameTab)
     return (
         <ul>
-            {nameTab.map(n => {
-                <li key={n}>{n}</li>
-            })}
+            {nameTab.map(n => <li key={n}>{n}</li>)}
         </ul>
     )
 }

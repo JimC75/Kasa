@@ -22,16 +22,22 @@
         transform-origin: 50% 40%;
     }
 
-    p,
-    ul {
+    .dropdown-content {
         max-height: 0;
-        margin-bottom: 40px;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
+    }
+
+    p,
+    ul {
+
+        margin-bottom: 40px;
+        overflow: hidden;
         border-radius: 10px;
         font-size: 18px;
         list-style: none;
         line-height: 142.6%;
+        padding: 30px 20px;
         background-color: #F6F6F6;
 
         li {
@@ -43,10 +49,9 @@
 
     &.open {
 
-        p,
-        ul {
+        .dropdown-content {
             max-height: 500px;
-            padding: 30px 20px;
+
         }
 
         .arrow {

@@ -1,13 +1,13 @@
 import logo from '../images/logo.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
     return (
         <header className="container head">
             <img src={logo} alt="" />
             <nav>
-                <Link to='/' className='nav-header nav-home'>Accueil</Link>
-                <Link to='/about' className='nav-header'>A propos</Link>
+                <NavLink to='/' className={({ isActive }) => `nav-header nav-home ${isActive ? "active" : ""}`}>Accueil</NavLink>
+                <NavLink to='/about' className='nav-header'>A propos</NavLink>
 
             </nav>
         </header>
