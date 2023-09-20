@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import arrowLeft from '../images/arrow-left.png'
+import arrowRight from '../images/arrow-right.png'
 
 function Carousel({ pictures }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // Logic to move to the next image
     const nextImage = () => {
         // setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
         const newIndex = currentIndex + 1;
@@ -15,7 +16,6 @@ function Carousel({ pictures }) {
         }
     };
 
-    // Logic to move to the previous image
     const prevImage = () => {
         // setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
         const newIndex = currentIndex - 1;
@@ -30,8 +30,15 @@ function Carousel({ pictures }) {
     return (
         <div className="carousel-container">
             <img src={pictures[currentIndex]} alt="Carousel" className="carousel-image" />
-            <button className='previous-carousel-button' onClick={prevImage}><i class="fa-solid fa-chevron-left"></i></button>
-            <button className='next-carousel-button' onClick={nextImage}><i class="fa-solid fa-chevron-right"></i></button>
+            <button className='previous-carousel-button' onClick={prevImage}>
+
+                <img src={arrowLeft} alt="previous image" />
+            </button>
+            <button className='next-carousel-button' onClick={nextImage}>
+
+                <img src={arrowRight} alt="next image" />
+
+            </button>
         </div>
     );
 }
