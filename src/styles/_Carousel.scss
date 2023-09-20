@@ -10,7 +10,16 @@
     .carousel-image {
         width: 100%;
         height: 100%;
+        position: absolute;
+        transition: max-width 0.5s ease-in-out;
+
+        &.closed-image {
+            max-width: 0;
+            z-index: 2;
+        }
     }
+
+
 
     button {
         position: absolute;
