@@ -33,7 +33,7 @@ function Carousel({ pictures }) {
     return (
         <div className="carousel-container">
             <img src={pictures[currentIndex]} alt="Carousel" className="carousel-image" />
-            <img src={pictures[previousIndex]} alt="Carousel" className="carousel-image closed-image" />
+            {/* <img src={pictures[previousIndex]} alt="Carousel" className="carousel-image closed-image" /> */}
             <button className='previous-carousel-button' onClick={prevImage}>
 
                 <img src={arrowLeft} alt="previous image" />

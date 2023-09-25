@@ -5,7 +5,7 @@ export default function Accordion({ title, content, list }) {
 
     return (
         <div className={`accordion${open ? ' open' : ''}`}>
-            <button onClick={() => setOpen(!open)}><span>{title}</span><span className="arrow"><i class="fa-solid fa-chevron-down"></i></span></button>
+            <button onClick={() => setOpen(!open)}><span>{title}</span><span className="arrow"><i className="fa-solid fa-chevron-down"></i></span></button>
             <div className="dropdown-content">
                 {!list ?
                     <p>{content}</p> :
