@@ -25,7 +25,12 @@ const router = createBrowserRouter([{
         {
             path: "logement/:logementId",
             element: <Logement />,
-        }]
+        },
+        {
+            path: "/404",
+            element: <ErrorPage />,
+        }
+    ]
 }]);
 
 export default router;

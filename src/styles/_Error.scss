@@ -1,21 +1,42 @@
 .error {
     text-align: center;
+    align-items: center;
+    justify-content: center;
 
     .quatre {
         font-size: 288px;
         font-weight: 700;
-        line-height: 411px;
         letter-spacing: 0em;
+        margin-top: 200px;
     }
 
     .oops {
         font-size: 36px;
         font-weight: 500;
+        margin: auto;
     }
 
     .retour {
+        display: block;
         text-decoration: none;
         color: #FF6060;
         font-size: 18px;
+        margin: 200px 0;
+    }
+}
+
+@media(max-width: 375px) {
+    .error {
+        .quatre {
+            font-size: 96px;
+        }
+
+        .oops {
+            font-size: 18px;
+        }
+
+        .retour {
+            font-size: 14px;
+        }
     }
 }

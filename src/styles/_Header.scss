@@ -1,8 +1,10 @@
 header {
+    max-width: 1240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
+    margin-inline: auto !important;
 
     .nav-header {
         color: #ff6060;
@@ -17,4 +19,28 @@ header {
     .active {
         text-decoration: underline;
     }
+}
+
+@media (max-width: 375px) {
+    header {
+        padding: 20px;
+
+        img {
+            width: 145px;
+        }
+
+        nav {
+            text-transform: uppercase;
+
+            .nav-header {
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .nav-home {
+                margin-right: 10px;
+            }
+        }
+    }
+
 }

@@ -18,3 +18,41 @@
         }
     }
 }
+
+@media(max-width: 375px) {
+    .container {
+        margin-inline: 20px;
+
+        #home-banner {
+            margin-inline: 0;
+            height: 223px;
+        }
+
+        .about-dropdowns {
+            width: 335px;
+
+            .accordion {
+                button {
+                    align-items: center;
+                    height: 30px;
+
+                    span {
+                        font-size: 13px;
+                    }
+
+                    .arrow {
+                        font-size: 16px;
+                        margin-top: 6px;
+                    }
+                }
+
+                .dropdown-content {
+                    p {
+                        font-size: 12px;
+                        padding: 20px 0 60px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
