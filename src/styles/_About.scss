@@ -1,5 +1,7 @@
 .about-dropdowns {
-    width: 1023px;
+    width: 100%;
+    max-width: 1023px;
+    min-width: 335px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -29,7 +31,7 @@
         }
 
         .about-dropdowns {
-            width: 335px;
+
 
             .accordion {
                 button {

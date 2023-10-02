@@ -66,9 +66,11 @@
 .grid-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     // margin: 0 20px;
 
     .div1 {
+        width: 100%;
         max-width: 1240px;
     }
 
