@@ -5,8 +5,9 @@ import AboutBanner from "../images/about-banner.jpg"
 export default function About() {
     return (
         <div>
-            <div id="home-banner">
+            <div id="about-banner">
                 <img src={AboutBanner} alt="bannière page about" />
+                <div className="overlay"></div>
             </div>
             <div className="about-dropdowns">
                 <Accordion title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />

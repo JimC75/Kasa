@@ -1,3 +1,27 @@
+#about-banner {
+    height: 223px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+}
+
 .about-dropdowns {
     width: 100%;
     max-width: 1023px;
@@ -25,12 +49,13 @@
     .container {
         margin-inline: 20px;
 
-        #home-banner {
+        #about-banner {
             margin-inline: 0;
             height: 223px;
         }
 
         .about-dropdowns {
+
 
 
             .accordion {

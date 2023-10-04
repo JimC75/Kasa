@@ -32,17 +32,20 @@ export default function LogementDetails({ pictures, title, location, tags, host,
                     </div>
                 </div>
             </div>
-            <div className="div3">
-                <Accordion title="Description" content={description} />
-            </div>
-            <div className="div4">
-                <Accordion title="Description" content={equipments} list={true} />
-                {/* <button><span className="to-upper-case">é</span>quipements<span className="arrow-up">^</span><span className="arrow-down">v</span></button>
+            <div id="container34">
+                <div className="div3">
+                    <Accordion title="Description" content={description} />
+                </div>
+                <div className="div4">
+                    <Accordion title="Description" content={equipments} list={true} />
+                    {/* <button><span className="to-upper-case">é</span>quipements<span className="arrow-up">^</span><span className="arrow-down">v</span></button>
                 <ul id="equipments-list">
                     {equipments.map(e =>
                         <li key={e}>{e}</li>
                     )}
                 </ul> */}
+                </div>
             </div>
+
         </div>)
 }
