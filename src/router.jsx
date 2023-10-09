@@ -5,6 +5,7 @@ import {
 import Root from './pages/root.jsx'
 import Home from './pages/Home.jsx'
 import ErrorPage from './pages/ErrorPage'
+import NotFound from './pages/NotFound.jsx'
 import About from './pages/About.jsx'
 import Logement from './pages/Logement.jsx'
 
@@ -28,7 +29,7 @@ const router = createBrowserRouter([{
         },
         {
             path: "/*",
-            element: <ErrorPage />,
+            element: <NotFound />,
         }
     ]
 }]);
