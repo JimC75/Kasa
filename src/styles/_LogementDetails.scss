@@ -160,6 +160,14 @@
     }
 }
 
+@media(max-width: 1280px) {
+
+    main,
+    header {
+        margin-inline: 20px !important;
+    }
+}
+
 @media(max-width: 1163px) {
     .grid-container {
         .div2 {
@@ -176,7 +184,7 @@
 
             .div3,
             .div4 {
-                margin: auto;
+                margin-inline: auto;
             }
         }
     }
