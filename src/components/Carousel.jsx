@@ -43,6 +43,9 @@ function Carousel({ pictures }) {
                 <img src={arrowRight} alt="next image" />
 
             </button>
+            <span>
+                {currentIndex + 1 + "/" + pictures.length}
+            </span>
         </div>
     );
 }
