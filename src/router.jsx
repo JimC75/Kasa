@@ -8,6 +8,7 @@ import ErrorPage from './pages/ErrorPage'
 import NotFound from './pages/NotFound.jsx'
 import About from './pages/About.jsx'
 import Logement from './pages/Logement.jsx'
+import { Suspense } from "react";
 
 
 const router = createBrowserRouter([{
