@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import Carousel from "./Carousel"
 import RatingStars from "./RatingStars"
 import Accordion from "./Accordion"

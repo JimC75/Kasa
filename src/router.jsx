@@ -7,8 +7,10 @@ import Home from './pages/Home.jsx'
 import ErrorPage from './pages/ErrorPage'
 import NotFound from './pages/NotFound.jsx'
 import About from './pages/About.jsx'
-import Logement from './pages/Logement.jsx'
-import { Suspense } from "react";
+// import Logement from './pages/Logement.jsx'
+import { Suspense, lazy } from "react";
+
+const Logement = lazy(() => import('./pages/Logement.jsx'));
 
 
 const router = createBrowserRouter([{
@@ -26,7 +28,9 @@ const router = createBrowserRouter([{
         },
         {
             path: "logement/:logementId",
-            element: <Logement />,
+            element: <Suspense fallback={<div>Chargement...</div>}>
+                <Logement />
+            </Suspense>,
         },
         {
             path: "/*",
