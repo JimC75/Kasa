@@ -4,7 +4,6 @@ import Accordion from "./Accordion"
 import NameSeparator from "./NameSeparator"
 
 export default function LogementDetails({ pictures, title, location, tags, host, rating, description, equipments }) {
-    console.log(host.name)
     return (
         <div className='grid-container'>
             <div className="div1">
